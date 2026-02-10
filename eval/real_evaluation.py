@@ -40,7 +40,7 @@ from baselines.apo import APOBaseline
 
 # Import noise injection and LLM judge
 try:
-    from eval.noise import apply_noise, get_noise_conditions
+    from eval.noise import apply_noise, get_noise_conditions, NoiseConfig
     HAS_NOISE = True
 except ImportError:
     HAS_NOISE = False
@@ -381,6 +381,10 @@ class RealEvaluationFramework:
                 logging.warning(f"Skipping sample {i}: no question/input field")
                 continue
             
+            # Step 0: Apply noise injection (for degradation robustness experiments)
+            if getattr(self, 'noise_config', None) and self.noise_config.noise_type != "clean":
+                original_prompt = self.noise_config.apply(original_prompt)
+            
             # Step 1: Prompt Optimization
             opt_start = time.time()
             
@@ -604,13 +608,20 @@ async def main():
     
     evaluator.setup_logging(args.log_level)
     
-    # Store noise and judge settings
-    evaluator.noise_type = args.noise_type
-    evaluator.noise_rate = args.noise_rate
-    evaluator.noise_seed = args.noise_seed
+    # Build noise config from CLI args
+    if HAS_NOISE and args.noise_type != "clean" and args.noise_rate > 0:
+        evaluator.noise_config = NoiseConfig(
+            noise_type=args.noise_type,
+            rate=args.noise_rate,
+            seed=args.noise_seed
+        )
+    else:
+        evaluator.noise_config = None
+    
     evaluator.judge_model = args.judge_model
     
-    logging.info(f"Noise settings: type={args.noise_type}, rate={args.noise_rate}, seed={args.noise_seed}")
+    noise_label = evaluator.noise_config.name if evaluator.noise_config else "clean"
+    logging.info(f"Noise settings: {noise_label} (type={args.noise_type}, rate={args.noise_rate}, seed={args.noise_seed})")
     logging.info(f"Ablation mode: {args.ablation}")
     
     # Run evaluation
