@@ -123,7 +123,8 @@ class RealEvaluationFramework:
         start_time = time.time()
         
         try:
-            async with httpx.AsyncClient(timeout=60.0) as client:
+            timeout_sec = float(os.getenv("VLLM_TIMEOUT", "60"))
+            async with httpx.AsyncClient(timeout=timeout_sec) as client:
                 response = await client.post(
                     f"{self.vllm_url}/v1/chat/completions",
                     json=payload

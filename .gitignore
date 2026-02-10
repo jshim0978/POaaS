@@ -105,3 +105,10 @@ Thumbs.db
 *.pdf
 tmp/
 temp_*/
+
+# Environment file (contains local settings)
+.env
+
+# Evaluation run artifacts (generated, not committed)
+results/real_eval_*.json
+results/pipeline_validation.json

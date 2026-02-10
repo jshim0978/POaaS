@@ -190,7 +190,7 @@ async def test_evaluation_framework():
         # Test evaluation metrics
         test_response = "The answer is 42"
         test_expected = "42"
-        scores = evaluator.evaluate_response(test_response, test_expected, "gsm8k")
+        scores = await evaluator.evaluate_response(test_response, test_expected, "gsm8k")
         
         if "accuracy" in scores:
             logging.info(f"✓ Evaluation metrics working: {scores}")
