@@ -53,7 +53,7 @@ CONFIGS = {
     }
 }
 
-# Manuscript decoding parameters (Table 5)
+# Manuscript decoding parameters (from config/decoding.json)
 DECODING_PARAMS = {
     "temperature": 0.2,
     "top_p": 0.9,

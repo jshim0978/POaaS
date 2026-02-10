@@ -32,7 +32,7 @@ their concrete implementations in this repository.
 
 ## Experiments and Results
 
-### Table 1: Main Results (Clean Inputs)
+### Table 3: Main Results (Clean Inputs)
 
 | What | Location | Command |
 |------|----------|---------|
@@ -41,14 +41,7 @@ their concrete implementations in this repository.
 | Aggregate into tables | `scripts/aggregate_results.py` | `python scripts/aggregate_results.py` |
 | Example output | `results/tables/table3.tex` | Pre-generated from test run |
 
-### Table 2: Degradation Robustness
-
-| What | Location | Command |
-|------|----------|---------|
-| Noise injection (deletion, mixup) | `eval/noise.py` | Imported by `scripts/run_full_experiments.py` |
-| Run degraded experiments | `scripts/run_full_experiments.py` | Automatically tests 5%, 10%, 15% noise |
-
-### Table 3: Efficiency Metrics
+### Table 4: Efficiency Metrics (Latency)
 
 | What | Location | Command |
 |------|----------|---------|
@@ -56,7 +49,14 @@ their concrete implementations in this repository.
 | Prometheus metrics | `poaas/common/metrics.py` | `LATENCY_HISTOGRAM`, `WORKER_CALLS_COUNTER` |
 | Result aggregation | `scripts/aggregate_results.py` | `make aggregate` |
 
-### Table 4: Ablation Study
+### Table 5: Degradation Robustness
+
+| What | Location | Command |
+|------|----------|---------|
+| Noise injection (deletion, mixup) | `eval/noise.py` | Imported by `scripts/run_full_experiments.py` |
+| Run degraded experiments | `scripts/run_full_experiments.py` | Automatically tests 5%, 10%, 15% noise |
+
+### Table 6: Ablation Study
 
 | Ablation | Environment Variable | Command |
 |----------|---------------------|---------|
@@ -64,7 +64,7 @@ their concrete implementations in this repository.
 | Without skip logic | `POAAS_ABLATION=no_skip` | `make ablation-no-skip` |
 | Without drift control | `POAAS_ABLATION=no_drift` | `make ablation-no-drift` |
 
-### Table 5: Cross-Model Results
+### Cross-Model Evaluation
 
 | Model | HF Identifier | Download |
 |-------|---------------|----------|

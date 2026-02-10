@@ -63,11 +63,11 @@ python scripts/run_experiments.py --config manuscript_full
 ## Implementation Details
 
 All baselines are implemented with:
-- **Real optimization algorithms** (not placeholders)
-- **Async/sync compatibility** for evaluation framework
-- **Proper error handling** with fallback mechanisms  
+- **Functional optimization algorithms** that call the vLLM API
+- **Async/sync compatibility** for the evaluation framework
+- **Error handling** with fallback mechanisms
 - **Configurable parameters** for different evaluation scenarios
-- **Integration** with POaaS evaluation pipeline
+- **Integration** with the POaaS evaluation pipeline
 
 ## Performance Characteristics
 

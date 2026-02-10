@@ -128,7 +128,7 @@ Results are saved to `results/` directory:
 
 All experiments use the exact parameters from the manuscript:
 
-**Decoding Parameters** (Table 5):
+**Decoding Parameters** (from `config/decoding.json`):
 - Temperature: 0.2
 - Top-p: 0.9
 - Max tokens: 512
@@ -167,7 +167,7 @@ pkill -f "python.*app.py"
 ```
 
 **3. Dataset Download Fails**
-The script will automatically fall back to mock datasets for testing if real datasets are unavailable.
+The script will automatically fall back to mock datasets for testing if real datasets are unavailable. Mock datasets are for pipeline validation only; results produced from mock data are **not valid** for paper reproduction.
 
 ### Performance Notes
 

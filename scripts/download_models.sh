@@ -2,8 +2,8 @@
 # Download models required for POaaS experiments.
 #
 # Models used in the FEVER 2026 manuscript:
-#   - meta-llama/Llama-3.2-3B-Instruct (default, Table 1-4)
-#   - meta-llama/Llama-3.1-8B-Instruct (cross-model evaluation, Table 5)
+#   - meta-llama/Llama-3.2-3B-Instruct (primary model, Tables 3-6)
+#   - meta-llama/Llama-3.1-8B-Instruct (cross-model evaluation)
 #
 # Prerequisites:
 #   - A Hugging Face account with access to Llama models
