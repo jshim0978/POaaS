@@ -99,3 +99,11 @@ their concrete implementations in this repository.
 | Noise injection | `eval/noise.py` | Token deletion and mixup at configurable rates |
 | LLM judge (HaluEval/HalluLens) | `eval/llm_judge.py` | GPT-based hallucination judging |
 | Cost computation | `config/prices.yml` | Per-token pricing for cost analysis |
+
+## Not Yet Implemented
+
+| Component | What's Needed |
+|-----------|---------------|
+| Vectara HHEM integration | Integrate Vectara's Hallucination and Heritage Evaluation Model (HHEM) API for factuality scoring; add optional HHEM-based evaluation path alongside existing LLM judge. |
+| 95% bootstrap confidence intervals | Add bootstrap resampling (e.g., via `scipy.stats.bootstrap` or manual resampling) to aggregate results; report mean ± 95% CI for each metric in tables. |
+| PromptBreeder baseline | Implement PromptBreeder baseline (Fernando et al.) as a new optimizer in `baselines/`; add to `--methods` choices in evaluation harness. |
