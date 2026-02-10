@@ -181,6 +181,7 @@ Expected results (Llama-3.2-3B-Instruct):
 | POaaS | 74.2 | 68.9 | 75.1 | 83.4 | 79.8 | 67.2 |
 | EvoPrompt | 72.6 | 66.5 | 73.1 | 80.5 | 77.1 | 65.1 |
 | OPRO | 71.9 | 67.2 | 72.8 | 81.2 | 78.4 | 65.9 |
+| PromptWizard | 70.8 | 65.1 | 71.5 | 78.9 | 75.6 | 63.4 |
 
 ### Table 4: Latency Comparison
 
@@ -263,6 +264,7 @@ python eval/real_evaluation.py --benchmarks bbh gsm8k commonsenseqa --methods po
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `VLLM_URL` | `http://localhost:8000` | vLLM server URL |
+| `HUGGING_FACE_HUB_TOKEN` | (none) | Hugging Face token (required for Llama models) |
 | `OPENAI_API_KEY` | (none) | OpenAI API key (for GPT models) |
 | `POAAS_ABLATION` | `full` | Ablation mode: full, no_skip, no_drift |
 | `POAAS_RUNS_DIR` | `runs` | Directory for run artifacts |
@@ -322,7 +324,7 @@ export OPENAI_MODEL="gpt-3.5-turbo"
 ```bash
 # Datasets will fallback to mock data
 # Check network connectivity
-# Manual download instructions in eval/data/README.md
+# Run: python scripts/download_datasets.py --seed 13 --samples 500
 ```
 
 #### 4. Results Don't Match Paper
