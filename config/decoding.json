@@ -1,0 +1,55 @@
+{
+  "models": {
+    "3b": "meta-llama/Llama-3.2-3B-Instruct",
+    "8b": "meta-llama/Llama-3.1-8B-Instruct"
+  },
+  "default_model": "3b",
+  "decoding": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "max_tokens": 512,
+    "seed": 13
+  },
+  "poaas_config": {
+    "typo_threshold": 0.30,
+    "completeness_threshold": 0.70,
+    "fluency_threshold": 0.80,
+    "clarity_threshold": 0.70,
+    "skip_threshold": 0.25,
+    "max_drift": 0.18,
+    "max_length_ratio": 2.4,
+    "fact_token_limit": 120,
+    "max_facts": 3
+  },
+  "ablations": {
+    "full": {
+      "skip_enabled": true,
+      "drift_enabled": true,
+      "description": "Full POaaS with all components"
+    },
+    "no_skip": {
+      "skip_enabled": false,
+      "drift_enabled": true,
+      "description": "POaaS without skip logic"
+    },
+    "no_drift": {
+      "skip_enabled": true,
+      "drift_enabled": false,
+      "description": "POaaS without drift control"
+    }
+  },
+  "worker_config": {
+    "cleaner": {
+      "temperature": 0.0,
+      "max_tokens": 512
+    },
+    "paraphraser": {
+      "temperature": 0.3,
+      "max_tokens": 512
+    },
+    "fact_adder": {
+      "temperature": 0.0,
+      "max_tokens": 120
+    }
+  }
+}

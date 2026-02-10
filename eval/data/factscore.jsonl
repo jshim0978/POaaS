@@ -1,0 +1,500 @@
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_0"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_1"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_2"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_3"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_4"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_5"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_6"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_7"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_8"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_9"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_10"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_11"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_12"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_13"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_14"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_15"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_16"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_17"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_18"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_19"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_20"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_21"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_22"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_23"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_24"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_25"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_26"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_27"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_28"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_29"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_30"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_31"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_32"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_33"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_34"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_35"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_36"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_37"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_38"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_39"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_40"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_41"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_42"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_43"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_44"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_45"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_46"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_47"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_48"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_49"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_50"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_51"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_52"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_53"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_54"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_55"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_56"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_57"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_58"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_59"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_60"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_61"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_62"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_63"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_64"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_65"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_66"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_67"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_68"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_69"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_70"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_71"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_72"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_73"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_74"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_75"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_76"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_77"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_78"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_79"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_80"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_81"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_82"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_83"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_84"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_85"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_86"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_87"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_88"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_89"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_90"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_91"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_92"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_93"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_94"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_95"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_96"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_97"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_98"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_99"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_100"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_101"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_102"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_103"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_104"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_105"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_106"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_107"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_108"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_109"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_110"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_111"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_112"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_113"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_114"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_115"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_116"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_117"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_118"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_119"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_120"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_121"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_122"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_123"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_124"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_125"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_126"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_127"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_128"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_129"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_130"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_131"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_132"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_133"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_134"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_135"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_136"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_137"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_138"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_139"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_140"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_141"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_142"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_143"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_144"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_145"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_146"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_147"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_148"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_149"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_150"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_151"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_152"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_153"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_154"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_155"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_156"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_157"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_158"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_159"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_160"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_161"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_162"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_163"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_164"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_165"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_166"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_167"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_168"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_169"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_170"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_171"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_172"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_173"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_174"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_175"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_176"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_177"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_178"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_179"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_180"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_181"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_182"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_183"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_184"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_185"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_186"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_187"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_188"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_189"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_190"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_191"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_192"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_193"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_194"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_195"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_196"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_197"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_198"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_199"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_200"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_201"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_202"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_203"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_204"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_205"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_206"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_207"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_208"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_209"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_210"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_211"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_212"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_213"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_214"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_215"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_216"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_217"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_218"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_219"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_220"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_221"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_222"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_223"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_224"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_225"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_226"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_227"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_228"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_229"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_230"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_231"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_232"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_233"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_234"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_235"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_236"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_237"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_238"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_239"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_240"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_241"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_242"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_243"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_244"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_245"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_246"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_247"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_248"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_249"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_250"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_251"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_252"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_253"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_254"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_255"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_256"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_257"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_258"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_259"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_260"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_261"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_262"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_263"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_264"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_265"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_266"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_267"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_268"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_269"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_270"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_271"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_272"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_273"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_274"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_275"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_276"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_277"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_278"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_279"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_280"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_281"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_282"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_283"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_284"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_285"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_286"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_287"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_288"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_289"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_290"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_291"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_292"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_293"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_294"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_295"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_296"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_297"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_298"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_299"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_300"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_301"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_302"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_303"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_304"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_305"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_306"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_307"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_308"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_309"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_310"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_311"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_312"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_313"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_314"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_315"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_316"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_317"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_318"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_319"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_320"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_321"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_322"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_323"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_324"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_325"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_326"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_327"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_328"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_329"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_330"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_331"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_332"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_333"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_334"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_335"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_336"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_337"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_338"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_339"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_340"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_341"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_342"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_343"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_344"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_345"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_346"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_347"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_348"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_349"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_350"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_351"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_352"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_353"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_354"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_355"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_356"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_357"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_358"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_359"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_360"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_361"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_362"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_363"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_364"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_365"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_366"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_367"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_368"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_369"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_370"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_371"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_372"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_373"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_374"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_375"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_376"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_377"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_378"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_379"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_380"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_381"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_382"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_383"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_384"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_385"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_386"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_387"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_388"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_389"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_390"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_391"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_392"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_393"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_394"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_395"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_396"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_397"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_398"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_399"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_400"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_401"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_402"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_403"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_404"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_405"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_406"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_407"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_408"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_409"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_410"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_411"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_412"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_413"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_414"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_415"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_416"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_417"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_418"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_419"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_420"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_421"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_422"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_423"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_424"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_425"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_426"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_427"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_428"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_429"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_430"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_431"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_432"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_433"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_434"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_435"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_436"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_437"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_438"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_439"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_440"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_441"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_442"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_443"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_444"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_445"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_446"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_447"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_448"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_449"}
+{"question": "Tell me a bio of Albert Einstein.", "entity": "Albert Einstein", "answer": "", "id": "factscore_450"}
+{"question": "Tell me a bio of Marie Curie.", "entity": "Marie Curie", "answer": "", "id": "factscore_451"}
+{"question": "Tell me a bio of Isaac Newton.", "entity": "Isaac Newton", "answer": "", "id": "factscore_452"}
+{"question": "Tell me a bio of Charles Darwin.", "entity": "Charles Darwin", "answer": "", "id": "factscore_453"}
+{"question": "Tell me a bio of Nikola Tesla.", "entity": "Nikola Tesla", "answer": "", "id": "factscore_454"}
+{"question": "Tell me a bio of Ada Lovelace.", "entity": "Ada Lovelace", "answer": "", "id": "factscore_455"}
+{"question": "Tell me a bio of Alan Turing.", "entity": "Alan Turing", "answer": "", "id": "factscore_456"}
+{"question": "Tell me a bio of Grace Hopper.", "entity": "Grace Hopper", "answer": "", "id": "factscore_457"}
+{"question": "Tell me a bio of Stephen Hawking.", "entity": "Stephen Hawking", "answer": "", "id": "factscore_458"}
+{"question": "Tell me a bio of Richard Feynman.", "entity": "Richard Feynman", "answer": "", "id": "factscore_459"}
+{"question": "Tell me a bio of Niels Bohr.", "entity": "Niels Bohr", "answer": "", "id": "factscore_460"}
+{"question": "Tell me a bio of Max Planck.", "entity": "Max Planck", "answer": "", "id": "factscore_461"}
+{"question": "Tell me a bio of Erwin Schr\u00f6dinger.", "entity": "Erwin Schr\u00f6dinger", "answer": "", "id": "factscore_462"}
+{"question": "Tell me a bio of Werner Heisenberg.", "entity": "Werner Heisenberg", "answer": "", "id": "factscore_463"}
+{"question": "Tell me a bio of Enrico Fermi.", "entity": "Enrico Fermi", "answer": "", "id": "factscore_464"}
+{"question": "Tell me a bio of J. Robert Oppenheimer.", "entity": "J. Robert Oppenheimer", "answer": "", "id": "factscore_465"}
+{"question": "Tell me a bio of Lise Meitner.", "entity": "Lise Meitner", "answer": "", "id": "factscore_466"}
+{"question": "Tell me a bio of Emmy Noether.", "entity": "Emmy Noether", "answer": "", "id": "factscore_467"}
+{"question": "Tell me a bio of Srinivasa Ramanujan.", "entity": "Srinivasa Ramanujan", "answer": "", "id": "factscore_468"}
+{"question": "Tell me a bio of John von Neumann.", "entity": "John von Neumann", "answer": "", "id": "factscore_469"}
+{"question": "Tell me a bio of Claude Shannon.", "entity": "Claude Shannon", "answer": "", "id": "factscore_470"}
+{"question": "Tell me a bio of Rosalind Franklin.", "entity": "Rosalind Franklin", "answer": "", "id": "factscore_471"}
+{"question": "Tell me a bio of Barbara McClintock.", "entity": "Barbara McClintock", "answer": "", "id": "factscore_472"}
+{"question": "Tell me a bio of Dorothy Hodgkin.", "entity": "Dorothy Hodgkin", "answer": "", "id": "factscore_473"}
+{"question": "Tell me a bio of Vera Rubin.", "entity": "Vera Rubin", "answer": "", "id": "factscore_474"}
+{"question": "Tell me a bio of Chien-Shiung Wu.", "entity": "Chien-Shiung Wu", "answer": "", "id": "factscore_475"}
+{"question": "Tell me a bio of Katherine Johnson.", "entity": "Katherine Johnson", "answer": "", "id": "factscore_476"}
+{"question": "Tell me a bio of Carl Sagan.", "entity": "Carl Sagan", "answer": "", "id": "factscore_477"}
+{"question": "Tell me a bio of Neil deGrasse Tyson.", "entity": "Neil deGrasse Tyson", "answer": "", "id": "factscore_478"}
+{"question": "Tell me a bio of Brian Cox.", "entity": "Brian Cox", "answer": "", "id": "factscore_479"}
+{"question": "Tell me a bio of Aristotle.", "entity": "Aristotle", "answer": "", "id": "factscore_480"}
+{"question": "Tell me a bio of Galileo Galilei.", "entity": "Galileo Galilei", "answer": "", "id": "factscore_481"}
+{"question": "Tell me a bio of Copernicus.", "entity": "Copernicus", "answer": "", "id": "factscore_482"}
+{"question": "Tell me a bio of Kepler.", "entity": "Kepler", "answer": "", "id": "factscore_483"}
+{"question": "Tell me a bio of Michael Faraday.", "entity": "Michael Faraday", "answer": "", "id": "factscore_484"}
+{"question": "Tell me a bio of James Clerk Maxwell.", "entity": "James Clerk Maxwell", "answer": "", "id": "factscore_485"}
+{"question": "Tell me a bio of Heinrich Hertz.", "entity": "Heinrich Hertz", "answer": "", "id": "factscore_486"}
+{"question": "Tell me a bio of Guglielmo Marconi.", "entity": "Guglielmo Marconi", "answer": "", "id": "factscore_487"}
+{"question": "Tell me a bio of Thomas Edison.", "entity": "Thomas Edison", "answer": "", "id": "factscore_488"}
+{"question": "Tell me a bio of Alexander Graham Bell.", "entity": "Alexander Graham Bell", "answer": "", "id": "factscore_489"}
+{"question": "Tell me a bio of Wright Brothers.", "entity": "Wright Brothers", "answer": "", "id": "factscore_490"}
+{"question": "Tell me a bio of Henry Ford.", "entity": "Henry Ford", "answer": "", "id": "factscore_491"}
+{"question": "Tell me a bio of Elon Musk.", "entity": "Elon Musk", "answer": "", "id": "factscore_492"}
+{"question": "Tell me a bio of Steve Jobs.", "entity": "Steve Jobs", "answer": "", "id": "factscore_493"}
+{"question": "Tell me a bio of Bill Gates.", "entity": "Bill Gates", "answer": "", "id": "factscore_494"}
+{"question": "Tell me a bio of Tim Berners-Lee.", "entity": "Tim Berners-Lee", "answer": "", "id": "factscore_495"}
+{"question": "Tell me a bio of Vint Cerf.", "entity": "Vint Cerf", "answer": "", "id": "factscore_496"}
+{"question": "Tell me a bio of Dennis Ritchie.", "entity": "Dennis Ritchie", "answer": "", "id": "factscore_497"}
+{"question": "Tell me a bio of Linus Torvalds.", "entity": "Linus Torvalds", "answer": "", "id": "factscore_498"}
+{"question": "Tell me a bio of Guido van Rossum.", "entity": "Guido van Rossum", "answer": "", "id": "factscore_499"}

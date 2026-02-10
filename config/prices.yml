@@ -1,0 +1,57 @@
+# POaaS Cost Configuration
+# Version: 1.0.0
+# Paper Reference: Appendix F
+# Last Updated: 2026-01-01
+#
+# Prices for computing 4o-equivalent cost as described in the paper.
+# All prices are per 1000 tokens.
+
+models:
+  # Target models used in experiments
+  meta-llama/Llama-3.2-3B-Instruct:
+    input_per_1k: 0.0001
+    output_per_1k: 0.0002
+    description: "3B parameter Llama model"
+    
+  meta-llama/Llama-3.1-8B-Instruct:
+    input_per_1k: 0.0002
+    output_per_1k: 0.0004
+    description: "8B parameter Llama model"
+    
+  # Reference models for cost comparison
+  gpt-4o:
+    input_per_1k: 0.005
+    output_per_1k: 0.015
+    description: "GPT-4o reference for cost comparison"
+    
+  gpt-4o-mini:
+    input_per_1k: 0.00015
+    output_per_1k: 0.0006
+    description: "GPT-4o-mini reference"
+    
+  gpt-3.5-turbo:
+    input_per_1k: 0.0005
+    output_per_1k: 0.0015
+    description: "GPT-3.5-turbo reference"
+
+# Cost computation settings
+cost_settings:
+  # Reference model for "4o-equivalent" cost computation
+  reference_model: "gpt-4o"
+  
+  # Currency
+  currency: "USD"
+  
+  # Include optimization overhead in cost
+  include_optimization_overhead: true
+
+# POaaS-specific cost factors
+poaas_overhead:
+  # Average overhead per optimization call (approximate)
+  cpu_routing_overhead_ms: 5
+  
+  # Worker call costs (relative to target model)
+  cleaner_factor: 1.0
+  paraphraser_factor: 1.0
+  fact_adder_factor: 0.5  # Smaller output budget
+

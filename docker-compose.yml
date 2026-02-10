@@ -1,0 +1,114 @@
+# POaaS Docker Compose Configuration
+# 
+# Usage:
+#   docker-compose up              # Start all services
+#   docker-compose up -d           # Start in background
+#   docker-compose logs -f         # Follow logs
+#   docker-compose down            # Stop all services
+#
+# For GPU support, use the vllm profile:
+#   docker-compose --profile vllm up
+
+version: '3.8'
+
+services:
+  # POaaS Orchestrator
+  orchestrator:
+    build: .
+    command: python orchestrator/app.py --port 8001
+    ports:
+      - "8001:8001"
+    environment:
+      - VLLM_URL=http://vllm:8000
+      - CLEANER_URL=http://cleaner:8002
+      - PARAPHRASER_URL=http://paraphraser:8003
+      - FACT_ADDER_URL=http://fact_adder:8004
+      - POAAS_ABLATION=full
+    depends_on:
+      - cleaner
+      - paraphraser
+      - fact_adder
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    volumes:
+      - ./runs:/app/runs
+      - ./results:/app/results
+
+  # Cleaner Worker
+  cleaner:
+    build: .
+    command: python workers/cleaner/app.py --port 8002
+    ports:
+      - "8002:8002"
+    environment:
+      - VLLM_URL=http://vllm:8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Paraphraser Worker
+  paraphraser:
+    build: .
+    command: python workers/paraphraser/app.py --port 8003
+    ports:
+      - "8003:8003"
+    environment:
+      - VLLM_URL=http://vllm:8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Fact-Adder Worker
+  fact_adder:
+    build: .
+    command: python workers/fact_adder/app.py --port 8004
+    ports:
+      - "8004:8004"
+    environment:
+      - VLLM_URL=http://vllm:8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # vLLM Server (GPU required)
+  # Uncomment and use --profile vllm to enable
+  vllm:
+    image: vllm/vllm-openai:latest
+    profiles:
+      - vllm
+    ports:
+      - "8000:8000"
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+    command: >
+      --model meta-llama/Llama-3.2-3B-Instruct
+      --host 0.0.0.0
+      --port 8000
+      --seed 13
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - ${HF_CACHE:-~/.cache/huggingface}:/root/.cache/huggingface
+
+volumes:
+  runs:
+  results:
+
+networks:
+  default:
+    name: poaas-network
+
