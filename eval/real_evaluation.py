@@ -228,8 +228,16 @@ class RealEvaluationFramework:
                 "optimization_latency_ms": (time.time() - start_time) * 1000
             }
     
-    def evaluate_response(self, response: str, expected: str, benchmark: str) -> Dict[str, float]:
-        """Evaluate model response using benchmark-appropriate metrics."""
+    async def evaluate_response(
+        self, response: str, expected: str, benchmark: str,
+        sample: Optional[Dict] = None
+    ) -> Dict[str, float]:
+        """Evaluate model response using benchmark-appropriate metrics.
+        
+        For factuality benchmarks (halueval, hallulens, factscore), uses the
+        LLM judge when available (HAS_JUDGE and self.judge is set), falling
+        back to heuristic methods otherwise.
+        """
         
         if benchmark in ["bbh", "gsm8k", "commonsenseqa"]:
             # Reasoning benchmarks: check for correct answer
@@ -237,17 +245,29 @@ class RealEvaluationFramework:
             return {"accuracy": accuracy}
             
         elif benchmark == "halueval":
-            # Hallucination detection: check truthfulness
+            judge = getattr(self, 'judge', None)
+            if judge is not None and HAS_JUDGE:
+                result = await evaluate_halueval(judge, response, sample or {})
+                return {"truthfulness": 1.0 if result["is_factual"] else 0.0}
+            # Fallback to heuristic
             truthfulness = self._check_truthfulness(response, expected)
             return {"truthfulness": truthfulness}
             
         elif benchmark == "hallulens":
-            # Consistency evaluation
+            judge = getattr(self, 'judge', None)
+            if judge is not None and HAS_JUDGE:
+                result = await evaluate_hallulens(judge, response, sample or {})
+                return {"consistency": 1.0 if result["is_factual"] else 0.0}
+            # Fallback to heuristic
             consistency = self._check_consistency(response, expected)
             return {"consistency": consistency}
             
         elif benchmark == "factscore":
-            # Factual accuracy evaluation
+            judge = getattr(self, 'judge', None)
+            if judge is not None and HAS_JUDGE:
+                result = await evaluate_factscore(judge, response, sample or {})
+                return {"fact_score": 1.0 if result["is_factual"] else 0.0}
+            # Fallback to heuristic
             fact_score = self._check_factual_accuracy(response, expected)
             return {"fact_score": fact_score}
             
@@ -416,8 +436,8 @@ class RealEvaluationFramework:
             inf_latency = inference_result["latency_ms"]
             total_inference_time += inf_latency
             
-            # Step 3: Evaluation
-            scores = self.evaluate_response(model_response, expected_answer, benchmark)
+            # Step 3: Evaluation (async to support LLM judge for factuality benchmarks)
+            scores = await self.evaluate_response(model_response, expected_answer, benchmark, sample)
             
             # Record result
             result = {
@@ -619,6 +639,14 @@ async def main():
         evaluator.noise_config = None
     
     evaluator.judge_model = args.judge_model
+    
+    # Build LLM judge for factuality benchmarks
+    if HAS_JUDGE:
+        evaluator.judge = HallucinationJudge(model=args.judge_model)
+        logging.info(f"LLM judge initialized with model={args.judge_model}")
+    else:
+        evaluator.judge = None
+        logging.info("LLM judge not available; using heuristic evaluation for factuality benchmarks")
     
     noise_label = evaluator.noise_config.name if evaluator.noise_config else "clean"
     logging.info(f"Noise settings: {noise_label} (type={args.noise_type}, rate={args.noise_rate}, seed={args.noise_seed})")
