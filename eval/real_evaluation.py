@@ -228,7 +228,9 @@ class RealEvaluationFramework:
                 "optimization_latency_ms": (time.time() - start_time) * 1000
             }
     
-    def evaluate_response(self, response: str, expected: str, benchmark: str) -> Dict[str, float]:
+    async def evaluate_response(
+        self, response: str, expected: str, benchmark: str, sample: Optional[Dict] = None
+    ) -> Dict[str, float]:
         """Evaluate model response using benchmark-appropriate metrics."""
         
         if benchmark in ["bbh", "gsm8k", "commonsenseqa"]:
@@ -237,17 +239,29 @@ class RealEvaluationFramework:
             return {"accuracy": accuracy}
             
         elif benchmark == "halueval":
-            # Hallucination detection: check truthfulness
+            # Hallucination detection: use LLM judge when available
+            if HAS_JUDGE and sample is not None:
+                judge = HallucinationJudge(model=getattr(self, "judge_model", "gpt-4o"))
+                result = await evaluate_halueval(judge, response, sample)
+                return {"truthfulness": 1.0 if result["is_factual"] else 0.0}
             truthfulness = self._check_truthfulness(response, expected)
             return {"truthfulness": truthfulness}
             
         elif benchmark == "hallulens":
-            # Consistency evaluation
+            # Consistency evaluation: use LLM judge when available
+            if HAS_JUDGE and sample is not None:
+                judge = HallucinationJudge(model=getattr(self, "judge_model", "gpt-4o"))
+                result = await evaluate_hallulens(judge, response, sample)
+                return {"consistency": 1.0 if result["is_factual"] else 0.0}
             consistency = self._check_consistency(response, expected)
             return {"consistency": consistency}
             
         elif benchmark == "factscore":
-            # Factual accuracy evaluation
+            # Factual accuracy evaluation: use LLM judge when available
+            if HAS_JUDGE and sample is not None:
+                judge = HallucinationJudge(model=getattr(self, "judge_model", "gpt-4o"))
+                result = await evaluate_factscore(judge, response, sample)
+                return {"fact_score": 1.0 if result["is_factual"] else 0.0}
             fact_score = self._check_factual_accuracy(response, expected)
             return {"fact_score": fact_score}
             
@@ -423,7 +437,7 @@ class RealEvaluationFramework:
             total_inference_time += inf_latency
             
             # Step 3: Evaluation
-            scores = self.evaluate_response(model_response, expected_answer, benchmark)
+            scores = await self.evaluate_response(model_response, expected_answer, benchmark, sample)
             
             # Record result
             result = {
