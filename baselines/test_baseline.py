@@ -4,9 +4,7 @@ Test script for individual baselines
 """
 
 import sys
-import asyncio
 import logging
-from typing import List, Dict
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).parent.parent))

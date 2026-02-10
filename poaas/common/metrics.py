@@ -19,7 +19,7 @@ Usage:
 
 import time
 from functools import wraps
-from typing import Callable, Optional
+from typing import Callable
 
 # Try to import prometheus_client, provide fallback if not available
 try:

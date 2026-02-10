@@ -26,7 +26,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 
 # Add project root to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
@@ -38,18 +38,6 @@ from baselines.opro import OPROBaseline
 from baselines.promptwizard import PromptWizardBaseline
 from baselines.apo import APOBaseline
 
-# Import noise injection and LLM judge
-try:
-    from eval.noise import apply_noise, get_noise_conditions
-    HAS_NOISE = True
-except ImportError:
-    HAS_NOISE = False
-
-try:
-    from eval.llm_judge import HallucinationJudge, evaluate_halueval, evaluate_hallulens, evaluate_factscore
-    HAS_JUDGE = True
-except ImportError:
-    HAS_JUDGE = False
 
 
 class RealEvaluationFramework:

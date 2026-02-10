@@ -12,8 +12,7 @@ Implements PromptWizard algorithm with:
 """
 
 import asyncio
-import random
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any
 from poaas.common.vllm_client import chat
 from baselines.async_utils import run_async
 

@@ -11,10 +11,9 @@ Implements evolutionary prompt optimization with:
 - LLM-guided mutations and crossover
 """
 
-import asyncio
 import random
 import re
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict
 from poaas.common.vllm_client import chat
 from baselines.async_utils import run_async
 
