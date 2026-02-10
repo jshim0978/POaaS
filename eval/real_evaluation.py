@@ -258,20 +258,20 @@ class RealEvaluationFramework:
     
     def _check_reasoning_accuracy(self, response: str, expected: str, benchmark: str) -> float:
         """Check reasoning accuracy for BBH/GSM8K/CommonsenseQA."""
-        response_clean = re.sub(r'[^\\w\\s]', '', response.lower().strip())
-        expected_clean = re.sub(r'[^\\w\\s]', '', expected.lower().strip())
+        response_clean = re.sub(r'[^\w\s]', '', response.lower().strip())
+        expected_clean = re.sub(r'[^\w\s]', '', expected.lower().strip())
         
         # Multiple choice answers (A, B, C, D)
         if benchmark == "commonsenseqa":
-            response_choices = re.findall(r'\\b[ABCD]\\b', response.upper())
-            expected_choices = re.findall(r'\\b[ABCD]\\b', expected.upper())
+            response_choices = re.findall(r'\b[ABCD]\b', response.upper())
+            expected_choices = re.findall(r'\b[ABCD]\b', expected.upper())
             if response_choices and expected_choices:
                 return 1.0 if response_choices[0] == expected_choices[0] else 0.0
         
         # Numerical answers for GSM8K
         if benchmark == "gsm8k":
-            response_nums = re.findall(r'\\d+(?:\\.\\d+)?', response)
-            expected_nums = re.findall(r'\\d+(?:\\.\\d+)?', expected)
+            response_nums = re.findall(r'\d+(?:\.\d+)?', response)
+            expected_nums = re.findall(r'\d+(?:\.\d+)?', expected)
             if response_nums and expected_nums:
                 try:
                     return 1.0 if abs(float(response_nums[-1]) - float(expected_nums[-1])) < 0.01 else 0.0

@@ -138,7 +138,7 @@ class APOBaseline:
                     max_tokens=50
                 )
                 
-                prediction = response.strip()
+                prediction = response["text"].strip()
                 
                 # Simple error detection (could be made more sophisticated)
                 if expected.lower() not in prediction.lower():
@@ -188,7 +188,7 @@ Wrap each reason with <START> and <END>."""
             )
             
             # Parse gradients from response
-            gradients = self._parse_tagged_text(response, "<START>", "<END>")
+            gradients = self._parse_tagged_text(response["text"], "<START>", "<END>")
             return gradients[:self.n_gradients]
             
         except Exception as e:
@@ -226,7 +226,7 @@ Wrap each improved prompt with <START> and <END>."""
             )
             
             # Parse improved prompts
-            improved_prompts = self._parse_tagged_text(response, "<START>", "<END>")
+            improved_prompts = self._parse_tagged_text(response["text"], "<START>", "<END>")
             return improved_prompts[:self.steps_per_gradient]
             
         except Exception as e:
@@ -249,7 +249,7 @@ Make small improvements to clarity or wording. Wrap each variation with <START> 
             )
             
             # Parse variations
-            variations = self._parse_tagged_text(response, "<START>", "<END>")
+            variations = self._parse_tagged_text(response["text"], "<START>", "<END>")
             return variations[:n]
             
         except Exception as e:
@@ -312,7 +312,7 @@ Make small improvements to clarity or wording. Wrap each variation with <START> 
                     max_tokens=50
                 )
                 
-                prediction = response.strip()
+                prediction = response["text"].strip()
                 
                 # Simple accuracy check
                 if expected.lower() in prediction.lower():

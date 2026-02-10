@@ -26,7 +26,7 @@ import random
 import requests
 import hashlib
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 import logging
 import argparse
 
@@ -130,7 +130,7 @@ def download_bbh() -> List[Dict]:
     return all_samples
 
 
-def stratified_sample_bbh(samples: List[Dict], n_samples: int, seed: int) -> tuple[List[Dict], List[int]]:
+def stratified_sample_bbh(samples: List[Dict], n_samples: int, seed: int) -> Tuple[List[Dict], List[int]]:
     """
     Stratified sampling across BBH subtasks.
     
@@ -400,7 +400,7 @@ def create_factscore_samples() -> List[Dict]:
     return samples
 
 
-def random_sample(samples: List[Dict], n_samples: int, seed: int) -> tuple[List[Dict], List[int]]:
+def random_sample(samples: List[Dict], n_samples: int, seed: int) -> Tuple[List[Dict], List[int]]:
     """Random sample with fixed seed. Returns samples and original indices."""
     random.seed(seed)
     
