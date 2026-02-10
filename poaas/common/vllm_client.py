@@ -17,7 +17,7 @@ import asyncio
 import httpx
 import os
 import time
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Tuple
 
 # Try to import config, fallback to defaults if not available
 try:
@@ -132,7 +132,7 @@ async def _call_openai_api(
     max_tokens: int,
     top_p: float,
     api_key: str
-) -> tuple[str, Dict[str, int]]:
+) -> Tuple[str, Dict[str, int]]:
     """Call OpenAI ChatCompletion API."""
     # Use GPT model when using OpenAI API
     payload = {
@@ -172,7 +172,7 @@ async def _call_vllm_server(
     model: str,
     base_url: str,
     seed: int
-) -> tuple[str, Dict[str, int]]:
+) -> Tuple[str, Dict[str, int]]:
     """Call local vLLM server."""
     payload = {
         "model": model,

@@ -9,8 +9,6 @@
 # For GPU support, use the vllm profile:
 #   docker-compose --profile vllm up
 
-version: '3.8'
-
 services:
   # POaaS Orchestrator
   orchestrator:

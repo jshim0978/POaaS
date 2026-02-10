@@ -16,6 +16,13 @@ import requests
 import os
 from pathlib import Path
 
+# Load .env file if present (allows 'cp .env.example .env' workflow)
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+except ImportError:
+    pass  # python-dotenv is optional
+
 def check_service(url: str, service_name: str) -> bool:
     """Check if a service is running and healthy."""
     try:
@@ -41,12 +48,15 @@ def start_service(script_path: str, port: int, service_name: str):
     else:
         cmd = [sys.executable, script_path]
     
+    # Set working directory to project root (parent of scripts/)
+    project_root = Path(__file__).resolve().parent.parent
+    
     process = subprocess.Popen(
         cmd,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         env=env,
-        cwd=Path(script_path).parent.parent  # Set working directory to project root
+        cwd=str(project_root)
     )
     
     # Wait a moment for service to start

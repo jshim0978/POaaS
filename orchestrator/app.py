@@ -586,7 +586,8 @@ async def infer(request: InferRequest, req: Request = None) -> InferResponse:
     )
 
 
-if __name__ == "__main__":
+def main():
+    """CLI entry point for POaaS Orchestrator."""
     import uvicorn
     import argparse
     
@@ -603,3 +604,7 @@ if __name__ == "__main__":
         os.environ["POAAS_ABLATION"] = args.ablation
     
     uvicorn.run(app, host=args.host, port=args.port)
+
+
+if __name__ == "__main__":
+    main()
