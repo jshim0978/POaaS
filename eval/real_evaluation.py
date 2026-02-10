@@ -40,7 +40,7 @@ from baselines.apo import APOBaseline
 
 # Import noise injection and LLM judge
 try:
-    from eval.noise import apply_noise, get_noise_conditions
+    from eval.noise import NoiseConfig, apply_noise, get_noise_conditions
     HAS_NOISE = True
 except ImportError:
     HAS_NOISE = False
@@ -381,11 +381,21 @@ class RealEvaluationFramework:
                 logging.warning(f"Skipping sample {i}: no question/input field")
                 continue
             
+            # Apply noise to prompt if configured (before sending to POaaS/baselines)
+            prompt_to_optimize = original_prompt
+            if HAS_NOISE:
+                noise_type = getattr(self, "noise_type", "clean")
+                noise_rate = getattr(self, "noise_rate", 0.0)
+                noise_seed = getattr(self, "noise_seed", 13)
+                if noise_type != "clean" or noise_rate > 0:
+                    noise_config = NoiseConfig(noise_type=noise_type, rate=noise_rate, seed=noise_seed)
+                    prompt_to_optimize = noise_config.apply(original_prompt)
+            
             # Step 1: Prompt Optimization
             opt_start = time.time()
             
             if method == "poaas":
-                opt_result = await self.call_poaas_optimization(original_prompt)
+                opt_result = await self.call_poaas_optimization(prompt_to_optimize)
                 optimized_prompt = opt_result["optimized_prompt"]
                 opt_latency = opt_result["optimization_latency_ms"]
                 optimization_info = {
@@ -394,13 +404,13 @@ class RealEvaluationFramework:
                     "reasoning": opt_result["reasoning"]
                 }
             elif method in self.baselines:
-                opt_result = await self.run_baseline_optimization(method, original_prompt, optimization_examples)
+                opt_result = await self.run_baseline_optimization(method, prompt_to_optimize, optimization_examples)
                 optimized_prompt = opt_result["optimized_prompt"]
                 opt_latency = opt_result["optimization_latency_ms"]
                 optimization_info = {"method": method}
             else:
                 # No optimization baseline
-                optimized_prompt = original_prompt
+                optimized_prompt = prompt_to_optimize
                 opt_latency = 0.0
                 optimization_info = {"method": "none"}
             
