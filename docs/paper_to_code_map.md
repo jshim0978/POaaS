@@ -99,3 +99,15 @@ their concrete implementations in this repository.
 | Noise injection | `eval/noise.py` | Token deletion and mixup at configurable rates |
 | LLM judge (HaluEval/HalluLens) | `eval/llm_judge.py` | GPT-based hallucination judging |
 | Cost computation | `config/prices.yml` | Per-token pricing for cost analysis |
+
+## Not Yet Implemented
+
+<!-- TODO: The items below are referenced in the paper but do not yet have
+     working implementations in this repository. They are tracked here so
+     contributors can prioritise them for future loops. -->
+
+| Paper Claim | Paper Location | Status | Notes |
+|-------------|---------------|--------|-------|
+| <!-- TODO --> Vectara HHEM integration for automated hallucination scoring | Section 4.3 (Hallucination Evaluation) | **Missing** | Paper reports HHEM scores alongside LLM-judge; the current codebase only implements LLM-judge (`eval/llm_judge.py`). Requires `vectara-hhem` package and an API key. |
+| <!-- TODO --> 95% bootstrap confidence intervals on all reported metrics | Section 5.1 (Statistical Significance) | **Missing** | Paper Table 1 shows ±CI values; `eval/real_evaluation.py` computes point estimates only. Needs `scipy.stats` or `numpy` bootstrap implementation. |
+| <!-- TODO --> PromptBreeder baseline comparison | Table 2 (Baseline Comparisons) | **Missing** | Paper lists PromptBreeder (Fernando et al., 2024) as a baseline; no implementation exists under `baselines/`. Requires evolutionary self-referential prompt mutation logic. |
