@@ -443,15 +443,78 @@ def save_dataset(samples: List[Dict], name: str, indices: List[int]):
     logger.info(f"Saved indices to {indices_file}")
 
 
-def download_all_datasets(seed: int = DEFAULT_SEED, n_samples: int = DEFAULT_SAMPLES):
-    """Download and prepare all datasets."""
-    logger.info(f"Downloading datasets with seed={seed}, n_samples={n_samples}")
+def load_pregenerated_indices(benchmark: str) -> Optional[List[int]]:
+    """Load pre-generated sample indices for exact reproducibility.
+    
+    Returns the list of indices if the file exists and is valid, else None.
+    """
+    indices_file = INDICES_DIR / f"{benchmark}_indices.json"
+    if not indices_file.exists():
+        logger.warning(f"No pre-generated indices found at {indices_file}")
+        return None
+    
+    try:
+        with open(indices_file) as f:
+            data = json.load(f)
+        
+        indices = data.get("indices", [])
+        stored_checksum = data.get("checksum", "")
+        computed_checksum = hashlib.md5(json.dumps(indices).encode()).hexdigest()
+        
+        if stored_checksum and stored_checksum != computed_checksum:
+            logger.warning(f"Checksum mismatch for {benchmark} indices; ignoring pre-generated file")
+            return None
+        
+        logger.info(f"Loaded {len(indices)} pre-generated indices for {benchmark} (checksum OK)")
+        return indices
+    except Exception as e:
+        logger.warning(f"Failed to load indices for {benchmark}: {e}")
+        return None
+
+
+def apply_pregenerated_indices(all_samples: List[Dict], indices: List[int]) -> Tuple[List[Dict], List[int]]:
+    """Select samples by pre-generated index list, skipping out-of-range indices."""
+    max_idx = len(all_samples) - 1
+    valid_indices = [i for i in indices if 0 <= i <= max_idx]
+    
+    if len(valid_indices) < len(indices):
+        logger.warning(
+            f"{len(indices) - len(valid_indices)} indices out of range "
+            f"(dataset size {len(all_samples)}); using {len(valid_indices)} valid indices"
+        )
+    
+    selected = [all_samples[i] for i in valid_indices]
+    return selected, valid_indices
+
+
+def download_all_datasets(
+    seed: int = DEFAULT_SEED,
+    n_samples: int = DEFAULT_SAMPLES,
+    use_indices: bool = False,
+):
+    """Download and prepare all datasets.
+    
+    Args:
+        seed: Random seed for sampling.
+        n_samples: Number of samples per benchmark.
+        use_indices: If True, load pre-generated indices from sample_indices/
+                     for exact reproducibility instead of re-sampling.
+    """
+    logger.info(f"Downloading datasets with seed={seed}, n_samples={n_samples}, use_indices={use_indices}")
     
     # 1. BBH with stratified sampling
     logger.info("\n=== Downloading BBH ===")
     bbh_all = download_bbh()
     if bbh_all:
-        bbh_samples, bbh_indices = stratified_sample_bbh(bbh_all, n_samples, seed)
+        if use_indices:
+            pre_indices = load_pregenerated_indices("bbh")
+            if pre_indices is not None:
+                bbh_samples, bbh_indices = apply_pregenerated_indices(bbh_all, pre_indices)
+            else:
+                logger.info("Falling back to stratified sampling for BBH")
+                bbh_samples, bbh_indices = stratified_sample_bbh(bbh_all, n_samples, seed)
+        else:
+            bbh_samples, bbh_indices = stratified_sample_bbh(bbh_all, n_samples, seed)
         save_dataset(bbh_samples, "bbh", bbh_indices)
     else:
         logger.error("Failed to download BBH - using fallback")
@@ -461,7 +524,15 @@ def download_all_datasets(seed: int = DEFAULT_SEED, n_samples: int = DEFAULT_SAM
     logger.info("\n=== Downloading GSM8K ===")
     gsm8k_all = download_gsm8k()
     if gsm8k_all:
-        gsm8k_samples, gsm8k_indices = random_sample(gsm8k_all, n_samples, seed)
+        if use_indices:
+            pre_indices = load_pregenerated_indices("gsm8k")
+            if pre_indices is not None:
+                gsm8k_samples, gsm8k_indices = apply_pregenerated_indices(gsm8k_all, pre_indices)
+            else:
+                logger.info("Falling back to random sampling for GSM8K")
+                gsm8k_samples, gsm8k_indices = random_sample(gsm8k_all, n_samples, seed)
+        else:
+            gsm8k_samples, gsm8k_indices = random_sample(gsm8k_all, n_samples, seed)
         save_dataset(gsm8k_samples, "gsm8k", gsm8k_indices)
     else:
         logger.error("Failed to download GSM8K - using fallback")
@@ -471,7 +542,15 @@ def download_all_datasets(seed: int = DEFAULT_SEED, n_samples: int = DEFAULT_SAM
     logger.info("\n=== Downloading CommonsenseQA ===")
     csqa_all = download_commonsenseqa()
     if csqa_all:
-        csqa_samples, csqa_indices = random_sample(csqa_all, n_samples, seed)
+        if use_indices:
+            pre_indices = load_pregenerated_indices("commonsenseqa")
+            if pre_indices is not None:
+                csqa_samples, csqa_indices = apply_pregenerated_indices(csqa_all, pre_indices)
+            else:
+                logger.info("Falling back to random sampling for CommonsenseQA")
+                csqa_samples, csqa_indices = random_sample(csqa_all, n_samples, seed)
+        else:
+            csqa_samples, csqa_indices = random_sample(csqa_all, n_samples, seed)
         save_dataset(csqa_samples, "commonsenseqa", csqa_indices)
     else:
         logger.error("Failed to download CommonsenseQA - using fallback")
@@ -481,7 +560,15 @@ def download_all_datasets(seed: int = DEFAULT_SEED, n_samples: int = DEFAULT_SAM
     logger.info("\n=== Downloading HaluEval ===")
     halueval_all = download_halueval()
     if halueval_all:
-        halueval_samples, halueval_indices = random_sample(halueval_all, n_samples, seed)
+        if use_indices:
+            pre_indices = load_pregenerated_indices("halueval")
+            if pre_indices is not None:
+                halueval_samples, halueval_indices = apply_pregenerated_indices(halueval_all, pre_indices)
+            else:
+                logger.info("Falling back to random sampling for HaluEval")
+                halueval_samples, halueval_indices = random_sample(halueval_all, n_samples, seed)
+        else:
+            halueval_samples, halueval_indices = random_sample(halueval_all, n_samples, seed)
         save_dataset(halueval_samples, "halueval", halueval_indices)
     else:
         logger.error("Failed to download HaluEval - using fallback")
@@ -490,13 +577,29 @@ def download_all_datasets(seed: int = DEFAULT_SEED, n_samples: int = DEFAULT_SAM
     # 5. HalluLens (template-based, requires manual data for full accuracy)
     logger.info("\n=== Creating HalluLens dataset ===")
     hallulens_all = create_hallulens_samples()
-    hallulens_samples, hallulens_indices = random_sample(hallulens_all, n_samples, seed)
+    if use_indices:
+        pre_indices = load_pregenerated_indices("hallulens")
+        if pre_indices is not None:
+            hallulens_samples, hallulens_indices = apply_pregenerated_indices(hallulens_all, pre_indices)
+        else:
+            logger.info("Falling back to random sampling for HalluLens")
+            hallulens_samples, hallulens_indices = random_sample(hallulens_all, n_samples, seed)
+    else:
+        hallulens_samples, hallulens_indices = random_sample(hallulens_all, n_samples, seed)
     save_dataset(hallulens_samples, "hallulens", hallulens_indices)
     
     # 6. FActScore
     logger.info("\n=== Creating FActScore dataset ===")
     factscore_all = create_factscore_samples()
-    factscore_samples, factscore_indices = random_sample(factscore_all, n_samples, seed)
+    if use_indices:
+        pre_indices = load_pregenerated_indices("factscore")
+        if pre_indices is not None:
+            factscore_samples, factscore_indices = apply_pregenerated_indices(factscore_all, pre_indices)
+        else:
+            logger.info("Falling back to random sampling for FActScore")
+            factscore_samples, factscore_indices = random_sample(factscore_all, n_samples, seed)
+    else:
+        factscore_samples, factscore_indices = random_sample(factscore_all, n_samples, seed)
     save_dataset(factscore_samples, "factscore", factscore_indices)
     
     # Summary
@@ -558,13 +661,16 @@ def main():
                         help=f"Number of samples per benchmark (default: {DEFAULT_SAMPLES})")
     parser.add_argument("--benchmark", type=str, default=None,
                         help="Download only specific benchmark (bbh, gsm8k, commonsenseqa, halueval, hallulens, factscore)")
+    parser.add_argument("--use-indices", action="store_true",
+                        help="Load pre-generated indices from sample_indices/ for exact "
+                             "reproducibility instead of re-sampling")
     
     args = parser.parse_args()
     
     logger.info("POaaS Dataset Preparation")
-    logger.info(f"Seed: {args.seed}, Samples per benchmark: {args.samples}")
+    logger.info(f"Seed: {args.seed}, Samples per benchmark: {args.samples}, use_indices: {args.use_indices}")
     
-    download_all_datasets(seed=args.seed, n_samples=args.samples)
+    download_all_datasets(seed=args.seed, n_samples=args.samples, use_indices=args.use_indices)
     
     logger.info("\nDataset preparation complete!")
     logger.info(f"Data directory: {DATA_DIR.absolute()}")
